@@ -9,7 +9,7 @@ header {
 
 body {
 
-    background-image:linear-gradient(rgba(255, 253, 253, 0.291),rgba(0, 0, 0, 0.5)), url('pexels-robby-mccullough-1867601.jpg'); 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.291),rgba(0, 0, 0, 0.5)), url('pexels-robby-mccullough-1867601.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@ body {
 }
 
 #displayParkInfo, #container1, #mtnSearchBar {
-    background-color: rgba(96, 96, 96, 0.291);
+    background-color: rgba(0, 0, 0, 0.465);
 }
 
 /* MOUNTAIN PAGE */

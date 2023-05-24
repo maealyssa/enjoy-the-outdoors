@@ -9,11 +9,13 @@ const findMtn = () => {
     const searchBtn = document.getElementById("searchMtn");
     const mountain = document.getElementById("mtnDropDown");
     for (let i = 0; i < mountainsArray.length; i++) {
-        mountain.options[mountain.options.length] = new Option(mountainsArray[i].name);
-    }
+        const mtn = mountainsArray[i];
+        mountain.options[mountain.options.length] = new Option(mtn.name, `${mtn.name}${mtn.elevation}`);
+    };
 
-    searchBtn.onclick = (mountain.options) => {
-        const elmntToView = document.getElementById();
+    searchBtn.onclick = () => {
+        const mtnValue = mountain.value;
+        const elmntToView = document.getElementById(mtnValue);
         elmntToView.scrollIntoView(); 
     }
 
