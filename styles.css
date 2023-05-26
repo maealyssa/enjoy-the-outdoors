@@ -1,113 +1,261 @@
+/* HOME PAGE */
 *, h1{
     font-weight: bolder;
     font-family: sans-serif;
 }
 
-header {
-    margin-bottom: 5rem;
+body, a{
+  cursor: url("favicon.ico"), auto;
+
 }
 
-body {
+.navbar {
+  padding-left: 2%;
+  z-index: 5;
+  position: absolute;
+}
 
-    background-image:linear-gradient(rgba(0, 0, 0, 0.291),rgba(0, 0, 0, 0.5)), url('pexels-robby-mccullough-1867601.jpg'); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+header {
+  width: auto;
+}
+
+.video-container {
+  z-index: -100;
+  width:100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+  
+#video-bg{
+  width:100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+  
+header .container {
+  position: absolute;
+  z-index: 99;
+  top: 20%;
+  left: 5%;
+}
+
+header .overlay {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7357536764705883) 25%, rgba(255,255,255,0) 50%);
+  z-index: 1;
+}
+
+#button {
+  position: relative;
+  margin-top: 5rem;
+}
+
+:root {
+  --rotationDuration: 20s;
+  --hoverDuration: 0.3s;
+  --easeIn: cubic-bezier(0.32, 0, 0.67, 0);
+  --easeOut: cubic-bezier(0.33, 1, 0.68, 1);
+  --textColor: #000000;
+  --bgColor: #A6B8B1;
+  --accentColor: #E8D6C1;
+}
+
+
+.link {
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  font: 300 1.55rem/1.4 "Josefin Sans"; 
+  text-transform: uppercase;
+  letter-spacing: 0.1175em;
+  word-spacing: 0.3em;
+  text-decoration: none;
+}
+
+.link__svg {
+  width: 100%;
+  height: auto;
+  transform-box: fill-box;
+  fill: var(--textColor);
+  stroke: var(--textColor);
+  stroke-width: 0.05em;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.link__cloud {
+  transform-origin: 50% 50%;
+  animation: rotate normal infinite 3 var(--rotationDuration) linear;
+  fill: rgba(255, 255, 255, 0.15);
+}
+
+.link__face,
+.link__arrow {
+  transform-origin: 50% 50%;
+  transition: transform calc(var(--hoverDuration) / 2) var(--easeIn);
+}
+
+.link:hover .link__face,
+.link:hover .link__arrow {
+  transform: scale(1.1);
+  transition: transform var(--hoverDuration) var(--easeOut);
+}
+
+.link__arrow {
+  stroke-width: 0.075em;
+}
+
+.link__text {
+  animation: rotateReverse normal infinite var(--rotationDuration) linear;
+  transform-origin: 50% 50%;
+}
+
+.link:hover .link__text {
+  animation-play-state: paused;
+}
+
+.link--alt {
+  font-size: 1.15rem;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+/* PARK SEARCH PAGE */
+main .container {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+
+}
+.mainBody{
+  background-color: #A6B8B1;
+  margin-bottom: 10rem ;
 }
 
 #parkOptions {
     width: 90%;
 }
 
-#searchPark, #searchPark2 {
-    max-width: 5rem;
+#container1 {
+  background-image: url("pexels-orest-sv-2465650.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#locationSearch, #parkDetails, #parkTypeSearch, #radioContainer {
-
-    color: #DAD7CD;
-}
-#locationPark, #specificPark, #parkType, #specificPark2, #mtnDropDown{
-    color: #DAD7CD;
+#displayParkInfo{
+  background: rgb(206,200,188);
+  background: linear-gradient(180deg, rgba(206,200,188,1) 0%, rgba(226,205,186,1) 28%, rgba(123,128,121,1) 52%, rgba(57,58,44,1) 72%, rgba(75,72,57,1) 87%, rgba(52,54,41,1) 100%);
 }
 
-#displayParkInfo, #container1, #mtnSearchBar {
-    background-color: rgba(0, 0, 0, 0.465);
+
+
+#button2 {
+  position: absolute;
+  margin-left: 75rem;
+  margin-top: 2rem;
 }
 
 /* MOUNTAIN PAGE */
 
-.hover {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 60%;
-  }
-  
-  .hover-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    transition: all 0.4s;
-  }
-  
-  .hover img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s;
-  }
-  
-  .hover-content {
-    position: relative;
-    z-index: 99;
-  }
-  
-  
-  /* DEMO 1 ============================== */
-  .hover-1 img {
-    width: 105%;
-    position: absolute;
-    top: 0;
-    left: -5%;
-    transition: all 0.3s;
-  }
-  
-  .hover-1-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    transition: all 0.4s;
-  }
-  
-  .hover-1 .hover-overlay {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .hover-1-description {
-    transform: translateY(0.5rem);
-    transition: all 0.4s;
-    opacity: 0;
-  }
-  
-  .hover-1:hover .hover-1-content {
-    bottom: 2rem;
-  }
-  
-  .hover-1:hover .hover-1-description {
-    opacity: 1;
-    transform: none;
-  }
-  
-  .hover-1:hover img {
-    left: 0;
-  }
-  
-  .hover-1:hover .hover-overlay {
-    opacity: 0;
-  }
+.card-wrapper {
+  margin-bottom: 30px;
+}
+.card-image .card .card-img-wrapper {
+  height: 100%;
+}
+.card-image .card .card-body {
+  display: none;
+}
+.card-image-title-description .card .card-img-wrapper {
+  max-height: 160px;
+}
+.card-image-title-description .card {
+  position: relative;
+  min-height: auto;
+}
+.card-image-title-description .card .card-body {
+  height: auto;
+  position: relative;
+  top: 0;
+  margin-bottom: -70px;
+}
+.card-image-title-description .card:hover .card-body {
+  top: -70px;
+}
+.card-image-title-description .card .card-body .card-title {
+  margin-bottom: .75rem;
+}
+.card {
+  /* display: inline-block; */
+  position: relative;
+  overflow: hidden;
+  min-height: 10rem;
+  height: 100%;
+}
+.card:hover {
+  box-shadow: 8px 12px 31px -10px #000000;
+}
+.card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.card-img-wrapper img {
+  transition: 1.5s ease;
+}
+.card:hover .card-img-wrapper img {
+  transform: scale(1.15);
+}
+.card-body .card-title {
+  margin-bottom: calc(50% + 20px);
+  transition: 1.5s ease;
+}
+.card:hover .card-body .card-title {
+  margin-bottom: .75rem;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  background-color: #fff;
+  transition: 1.5s ease;
+}
+.card-content {
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  transition: 1.5s ease;
+}
+.card:hover .card-body {
+  height: 80%;
+}
+.card:hover .card-content {
+  bottom: 0;
+}

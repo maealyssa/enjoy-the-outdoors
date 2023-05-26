@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>National Parks</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,23 +16,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <header>  
-    <!--  NAVBAR  -->
-        <nav class="navbar navbar-expand-lg p-3">
-            <a class="navbar-brand" href="#">National Parks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="location.html">Parks</a>
-                <a class="nav-item nav-link" href="mountains.html">Mountains</a>
-              </div>
-            </div>
-          </nav>
-    </header>
+<body class="mainBody">
+  <header style="height: 6rem;">  
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand " href="#"><img src="./images/images-removebg-preview.png" width="75"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="location.html">Parks</a>
+          <a class="nav-item nav-link" href="mountains.html">Mountains</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   
   <main>
@@ -46,10 +47,10 @@
         </div>
         <!-- Search Button -->
         <div class="col">
-          <button id="searchMtn" class="btn btn-outline-light" type="button">Search</button>
+          <button id="searchMtn" class="btn btn-outline-dark" type="button">Search</button>
         </div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row g-3 mt-2" id="mtnGrid"></div>
       </div>
     </div>

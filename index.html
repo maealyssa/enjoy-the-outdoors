@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>National Parks</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,24 +17,61 @@
 </head>
 
 <body>
-    <header>  
-    <!--  NAVBAR  -->
-        <nav class="navbar navbar-expand-lg p-3">
-            <a class="navbar-brand" href="#">National Parks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="location.html">Parks</a>
-                <a class="nav-item nav-link" href="mountains.html">Mountains</a>
-              </div>
-            </div>
-          </nav>
-    </header>
-  <main>
+  <header>
 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand " href="#"><img src="./images/images-removebg-preview.png" width="75"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="location.html">Parks</a>
+          <a class="nav-item nav-link" href="mountains.html">Mountains</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <div id="video-container">
+    <video autoplay="autoplay" loop="loop" id="video-bg" >
+      <source src="pexels-taryn-elliott-7866401-3840x2160-25fps.mp4" type="video/mp4">
+    </video>
+  </div>
+    <!-- The header content -->
+    <div class="container" id="textTitle">
+      <div class="h-100">
+        <div class="w-100">
+          <h1 class="display-3">Find Your<br> Perfect Escape</h1>
+          <p class="lead m-3">Live Laugh Love</p>
+          <a href="location.html" class="link" id="button">
+            <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg" aria-labelledby="link1-title link1-desc">
+              <title id="link1-title">Come quick and click this</title>
+              <desc id="link1-desc">A rotating link with text placed around a circle with an arrow inside</desc>
+          
+              <path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" stroke="none" fill="none" />
+          
+              <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"  fill="none" />
+          
+              <text class="link__text">
+                <textPath href="#link-circle" stroke="none">
+                  Headed to the Park? ~~~~~
+                </textPath>
+              </text>
+            </svg>
+          </a>
+          <br>
+        </div> 
+      </div>
+    </div>
+  </header>
+
+  <main>
   </main>
 
   <!-- Bootstrap JavaScript Libraries -->
