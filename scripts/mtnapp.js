@@ -33,10 +33,10 @@ const displayMtn = () => {
           <img class="card-img-top" src="./images/${result.img}" alt="Card image cap">
         </div>
         <div class="card-body">
-          <h5 class="card-title text-uppercase">${result.name}</h5>
+          <h5 class="card-title text-uppercase display">${result.name}</h5>
           <div class="card-content">
-            <p class="card-text">${result.desc}</p>
-            <p class="card-text">Elevation: ${result.elevation} ft</p>
+            <p class="card-text lead">${result.desc}</p>
+            <p class="card-tex lead">Elevation: ${result.elevation} ft</p>
           </div>
         </div>
       </div>

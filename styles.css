@@ -148,7 +148,7 @@ main .container {
 }
 .mainBody{
   background-color: #A6B8B1;
-  margin-bottom: 10rem ;
+  margin-bottom: 5rem;
 }
 
 #parkOptions {
@@ -171,7 +171,7 @@ main .container {
 #button2 {
   position: absolute;
   margin-left: 75rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 /* MOUNTAIN PAGE */

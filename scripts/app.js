@@ -49,8 +49,8 @@ const searchPark = (optionPicked) => {
                 document.getElementById("displayParkInfo").innerHTML = `
                 <h2 class="display-3 ">${park.LocationName}</h2> 
                 <p class="lead">Address: <br> ${park.Address} <br> ${park.City}, ${park.State} ${park.ZipCode}</p> 
-                <p class="lead">Phone Number: ${park.Phone}</p> 
-                <p class="lead">Fax: ${park.Fax}</p>`
+                <p class="lead text-white">Phone Number: ${park.Phone}</p> 
+                <p class="lead text-white">Fax: ${park.Fax}</p>`
             }
         }
     }
