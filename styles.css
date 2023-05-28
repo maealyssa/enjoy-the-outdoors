@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 
-*, body, a{
+* {
   cursor: url("favicon.ico"), auto;
 
 }
@@ -165,8 +165,6 @@ main .container {
   background: rgb(206,200,188);
   background: linear-gradient(180deg, rgba(206,200,188,1) 0%, rgba(226,205,186,1) 28%, rgba(123,128,121,1) 52%, rgba(57,58,44,1) 72%, rgba(75,72,57,1) 87%, rgba(52,54,41,1) 100%);
 }
-
-
 
 #button2 {
   position: absolute;
