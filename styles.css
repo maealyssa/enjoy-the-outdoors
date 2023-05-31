@@ -203,9 +203,8 @@ main .container {
   margin-bottom: .75rem;
 }
 .card {
-  /* display: inline-block; */
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   min-height: 10rem;
   height: 100%;
 }
